@@ -12,6 +12,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let date2 = DateComponents(calendar: .current, year: 2017, month: 6, day: 9, hour: 4, minute: 51).date!
+        
+       var tm =  TimeManagment(date: date2)
+        print(tm.getTimeFormate())
+
         // Do any additional setup after loading the view, typically from a nib.
     }
 
