@@ -14,6 +14,8 @@
 		17DB19B01EEA8E9A006CA56C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17DB19AE1EEA8E9A006CA56C /* LaunchScreen.storyboard */; };
 		17DB19BB1EEA8E9B006CA56C /* TimeManagmentWithDatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DB19BA1EEA8E9B006CA56C /* TimeManagmentWithDatesTests.swift */; };
 		17DB19C61EEA8E9B006CA56C /* TimeManagmentWithDatesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DB19C51EEA8E9B006CA56C /* TimeManagmentWithDatesUITests.swift */; };
+		17DB19D51EEA8ECB006CA56C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DB19D41EEA8ECB006CA56C /* Extension.swift */; };
+		17DB19D81EEA8F45006CA56C /* TimeManagment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DB19D71EEA8F45006CA56C /* TimeManagment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		17DB19C11EEA8E9B006CA56C /* TimeManagmentWithDatesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeManagmentWithDatesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17DB19C51EEA8E9B006CA56C /* TimeManagmentWithDatesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManagmentWithDatesUITests.swift; sourceTree = "<group>"; };
 		17DB19C71EEA8E9B006CA56C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17DB19D41EEA8ECB006CA56C /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		17DB19D71EEA8F45006CA56C /* TimeManagment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeManagment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		17DB19A41EEA8E9A006CA56C /* TimeManagmentWithDates */ = {
 			isa = PBXGroup;
 			children = (
+				17DB19D61EEA8F29006CA56C /* Model */,
+				17DB19D31EEA8EAA006CA56C /* Extension */,
 				17DB19A51EEA8E9A006CA56C /* AppDelegate.swift */,
 				17DB19A71EEA8E9A006CA56C /* ViewController.swift */,
 				17DB19A91EEA8E9A006CA56C /* Main.storyboard */,
@@ -123,6 +129,22 @@
 				17DB19C71EEA8E9B006CA56C /* Info.plist */,
 			);
 			path = TimeManagmentWithDatesUITests;
+			sourceTree = "<group>";
+		};
+		17DB19D31EEA8EAA006CA56C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				17DB19D41EEA8ECB006CA56C /* Extension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		17DB19D61EEA8F29006CA56C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				17DB19D71EEA8F45006CA56C /* TimeManagment.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +215,7 @@
 				TargetAttributes = {
 					17DB19A11EEA8E9A006CA56C = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = AXT8UHAXWZ;
 						ProvisioningStyle = Automatic;
 					};
 					17DB19B51EEA8E9B006CA56C = {
@@ -259,6 +282,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17DB19D51EEA8ECB006CA56C /* Extension.swift in Sources */,
+				17DB19D81EEA8F45006CA56C /* TimeManagment.swift in Sources */,
 				17DB19A81EEA8E9A006CA56C /* ViewController.swift in Sources */,
 				17DB19A61EEA8E9A006CA56C /* AppDelegate.swift in Sources */,
 			);
@@ -414,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AXT8UHAXWZ;
 				INFOPLIST_FILE = TimeManagmentWithDates/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dp.TimeManagmentWithDates;
@@ -426,6 +452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AXT8UHAXWZ;
 				INFOPLIST_FILE = TimeManagmentWithDates/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dp.TimeManagmentWithDates;
@@ -507,6 +534,7 @@
 				17DB19CC1EEA8E9B006CA56C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17DB19CD1EEA8E9B006CA56C /* Build configuration list for PBXNativeTarget "TimeManagmentWithDatesTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +543,7 @@
 				17DB19CF1EEA8E9B006CA56C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17DB19D01EEA8E9B006CA56C /* Build configuration list for PBXNativeTarget "TimeManagmentWithDatesUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +552,7 @@
 				17DB19D21EEA8E9B006CA56C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
